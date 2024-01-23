@@ -6,38 +6,36 @@
     <script src="CalculatorBackend.js"></script>
     <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 <body>
     <h1>Calculator</h1>
     <div>
-        <input type="number" id="display" value="0">
+        <input type="number" id="display" value="">
         <div>
             <button id="num_1" onclick="getValue(1)">1</button>
-            <button id="num_2" onclick="getValue(1)">2</button>
-            <button id="num_3" onclick="getValue(1)">3</button>
-            <button id="add">+</button>
+            <button id="num_2" onclick="getValue(2)">2</button>
+            <button id="num_3" onclick="getValue(3)">3</button>
+            <button id="add" onclick="getFunc('+')">+</button>
         </div>
         <div>
-            <button id="num_4" onclick="getValue(1)">4</button>
-            <button id="num_5" onclick="getValue(1)">5</button>
-            <button id="num_6" onclick="getValue(1)">6</button>
-            <button id="subtract">-</button>
+            <button id="num_4" onclick="getValue(4)">4</button>
+            <button id="num_5" onclick="getValue(5)">5</button>
+            <button id="num_6" onclick="getValue(6)">6</button>
+            <button id="subtract" onclick="getFunc('-')">-</button>
         </div>
         <div>
-            <button id="num_7" onclick="getValue(1)">7</button>
-            <button id="num_8" onclick="getValue(1)">8</button>
-            <button id="num_9" onclick="getValue(1)">9</button>
-            <button id="multiply">*</button>
+            <button id="num_7" onclick="getValue(7)">7</button>
+            <button id="num_8" onclick="getValue(8)">8</button>
+            <button id="num_9" onclick="getValue(9)">9</button>
+            <button id="multiply" onclick="getFunc('*')">*</button>
         </div>
         <div>
-            <button id="clear">C</button>
-            <button id="num_0" onclick="getValue(1)">0</button>
-            <button id="equals">=</button>
-            <button id="divide">/</button>
+            <button id="clear" onclick="clearDisplay()">C</button>
+            <button id="num_0" onclick="getValue(0)">0</button>
+            <button id="equals" onclick="equals()">=</button>
+            <button id="divide" onclick="getFunc('/')">/</button>
         </div>
-       
-
     </div>
 </body>
 </html>
